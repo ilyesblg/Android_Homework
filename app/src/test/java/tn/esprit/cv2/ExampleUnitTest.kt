@@ -1,4 +1,4 @@
-package com.esprit.myapplication
+package tn.esprit.cv2
 
 import org.junit.Test
 
