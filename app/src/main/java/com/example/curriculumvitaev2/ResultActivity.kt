@@ -33,6 +33,7 @@ class ResultActivity : AppCompatActivity() {
         val btnLanguage = findViewById<Button>(R.id.btn_language)
         val nameR = findViewById<TextView>(R.id.name_textview)
         val emailR = findViewById<TextView>(R.id.email_textview)
+        val btnMyCareer = findViewById<Button>(R.id.career_btn)
         nameR.text = name
         emailR.text = email
 
@@ -67,6 +68,10 @@ class ResultActivity : AppCompatActivity() {
             showFragment(fragment)
         }
 
+        btnMyCareer.setOnClickListener {
+            intent = Intent(this,CareerActivity::class.java)
+            startActivity(intent)
+        }
     }
     fun showFragment(fragment: Fragment){
         val fram = supportFragmentManager.beginTransaction()
